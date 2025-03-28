@@ -16,7 +16,7 @@ def mask_account_card(card_info: str) -> str:
 def get_time(date: str) -> str:
     """Функция получает время и возвращает в формате ДД.ММ.ГГГГ"""
     get_datetime = datetime.strptime(date, "%Y-%m-%dT%H:%M:%S.%f")
-    correct_date = get_datetime.strftime('%d.%m.%Y')
+    correct_date = get_datetime.strftime("%d.%m.%Y")
     return correct_date
 
 
@@ -31,6 +31,4 @@ if __name__ == "__main__":
     print(mask_account_card("Счет 35383033474447895560"))
     print(mask_account_card("Счет 73654108430135874305"))
 
-    print(get_time('2024-03-11T02:26:18.671407'))
-
-# test
+    print(get_time("2024-03-11T02:26:18.671407"))
