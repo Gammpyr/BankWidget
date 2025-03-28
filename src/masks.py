@@ -9,8 +9,3 @@ def get_mask_account(account_number: int | str) -> str:
     """Принимает номер счета и возвращает маску формата **XXXX"""
     str_account_number = str(account_number)
     return f"**{str_account_number[-4:]}"
-
-
-if __name__ == "__main__":
-    print(get_mask_card_number(input()))
-    print(get_mask_account(input()))
