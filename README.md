@@ -1,5 +1,7 @@
 # Bank Widget
 
+![SkyPro](https://res.cloudinary.com/admitad-gmbh/image/upload/f_auto,h_0.5/v1671725214/x9o5qcorfliychngyjpk.webp)
+
 ## Описание:
 Виджет для банка, разрабатываемый во время обучения языку Python.
 
@@ -24,6 +26,13 @@
 1. `filter_by_state` - возвращает новый список словарей,
     у которых ключ state соответствует указанному значению
 2. `sort_by_date` - Возвращает новый список, отсортированный по дате
+
+[generators.py](src/generators.py)
+1. `filter_by_currency` - возвращает итератор, который поочередно выдает транзакции,
+    где валюта операции соответствует заданной
+2. `transaction_descriptions` - Принимает список словарей с транзакциями и возвращает описание каждой операции, 
+    по очереди
+3. `card_number_generator` - выдает номера банковских карт в формате XXXX XXXX XXXX XXXX
 
 ## Установка:
 
