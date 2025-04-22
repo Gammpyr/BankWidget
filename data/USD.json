@@ -1,0 +1,11 @@
+{
+    "query": {
+        "from": "USD",
+        "amount": 1
+    },
+    "info": {
+        "rate": 2
+    },
+    "date": "2000-01-01",
+    "result": 3.3
+}
