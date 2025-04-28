@@ -1,4 +1,4 @@
-from src.config import PATH_TO_FILE
+from src.config import PATH_TO_JSON_FILE, PATH_TO_CSV_FILE, PATH_TO_XLSX_FILE
 from src.utils import get_amount_in_rubles, get_data_from_json
 from src.widget import get_time, mask_account_card
 
@@ -16,6 +16,6 @@ if __name__ == "__main__":
     print(get_time("2024-03-11T02:26:18.671407"))
 
     # src.utils
-    transactions = get_data_from_json(PATH_TO_FILE)
+    transactions = get_data_from_json(PATH_TO_JSON_FILE)
     for transaction in transactions:
         print(get_amount_in_rubles(transaction))
