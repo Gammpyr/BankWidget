@@ -1,4 +1,5 @@
-from src.config import PATH_TO_JSON_FILE, PATH_TO_CSV_FILE, PATH_TO_XLSX_FILE
+from src.config import PATH_TO_CSV_FILE, PATH_TO_JSON_FILE, PATH_TO_XLSX_FILE
+from src.tabular_data import get_data_from_csv_file, get_data_from_excel_file
 from src.utils import get_amount_in_rubles, get_data_from_json
 from src.widget import get_time, mask_account_card
 
@@ -19,3 +20,7 @@ if __name__ == "__main__":
     transactions = get_data_from_json(PATH_TO_JSON_FILE)
     for transaction in transactions:
         print(get_amount_in_rubles(transaction))
+
+    # src.tabular_data
+    print(get_data_from_csv_file(PATH_TO_CSV_FILE))
+    print(get_data_from_excel_file(PATH_TO_XLSX_FILE))
