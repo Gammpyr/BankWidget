@@ -1,11 +1,14 @@
 {
+    "success": true,
     "query": {
         "from": "USD",
-        "amount": 1
+        "to": "RUB",
+        "amount": 8221.37
     },
     "info": {
-        "rate": 2
+        "timestamp": 1745831894,
+        "rate": 82.484847
     },
-    "date": "2000-01-01",
-    "result": 3.3
+    "date": "2025-04-28",
+    "result": 678138.44658
 }
