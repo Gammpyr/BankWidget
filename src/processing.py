@@ -3,8 +3,9 @@ def filter_by_state(dict_list: list[dict], state: str = "EXECUTED") -> list[dict
     у которых ключ state соответствует указанному значению."""
     result = []
     for data in dict_list:
-        if data["state"] == state:
-            result.append(data)
+        if data:
+            if data["state"] == state:
+                result.append(data)
     return result
 
 
